@@ -1,0 +1,61 @@
+{
+  "name": "trainers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "trainerId": {
+      "type": "number"
+    },
+    "trainerName": {
+      "type": "string"
+    },
+    "emailId": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "membersList": {
+      "type": [
+        "string"
+      ]
+    },
+    "dateOfJoining": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "isPresentNow": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trainerProfiles": {
+      "type": "hasOne",
+      "model": "trainer_profile",
+      "foreignKey": "trainerId"
+    },
+    "trainerAttendances": {
+      "type": "hasMany",
+      "model": "trainer_attendance",
+      "foreignKey": "trainerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

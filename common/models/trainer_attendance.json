@@ -1,0 +1,32 @@
+{
+  "name": "trainer_attendance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "trainerId": {
+      "type": "string"
+    },
+    "inTime": {
+      "type": "date"
+    },
+    "outTime": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trainers": {
+      "type": "belongsTo",
+      "model": "trainers",
+      "foreignKey": "trainerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

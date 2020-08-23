@@ -1,0 +1,53 @@
+{
+  "name": "member_progress_report",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "memberId": {
+      "type": "string"
+    },
+    "trainerId": {
+      "type": "string"
+    },
+    "recordedDate": {
+      "type": "date"
+    },
+    "height": {
+      "type": "number"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "measurements": {
+      "type": "object"
+    },
+    "trainerRemarks": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "members": {
+      "type": "belongsTo",
+      "model": "members",
+      "foreignKey": "memberId"
+    },
+    "trainers": {
+      "type": "belongsTo",
+      "model": "trainers",
+      "foreignKey": "trainerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

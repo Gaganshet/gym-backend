@@ -1,0 +1,96 @@
+{
+  "name": "members",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "memberId": {
+      "type": "number"
+    },
+    "memberName": {
+      "type": "string"
+    },
+    "packageId": {
+      "type": "string"
+    },
+    "trainerId": {
+      "type": "string"
+    },
+    "startOfSubscription": {
+      "type": "date"
+    },
+    "endOfSubscription": {
+      "type": "date"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "lastNotified": {
+      "type": "date"
+    },
+    "emailId": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "amountPaid": {
+      "type": "number"
+    },
+    "isPresentNow": {
+      "type": "boolean",
+      "default": false
+    },
+    "isNotified": {
+      "type": "boolean",
+      "default": false
+    },
+    "isInterested": {
+      "type": "boolean",
+      "default": true
+    },
+    "remarks": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "packageDetails": {
+      "type": "belongsTo",
+      "model": "package_details",
+      "foreignKey": "packageId"
+    },
+    "trainer_member": {
+      "type": "belongsTo",
+      "model": "trainers",
+      "foreignKey": "trainerId"
+    },
+    "memberProfiles": {
+      "type": "hasOne",
+      "model": "member_profile",
+      "foreignKey": "memberId"
+    },
+    "memberAttendances": {
+      "type": "hasMany",
+      "model": "member_attendance",
+      "foreignKey": "memberId"
+    },
+    "gymBranch": {
+      "type": "belongsTo",
+      "model": "gym_branch",
+      "foreignKey": "branch_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

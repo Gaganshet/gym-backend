@@ -1,0 +1,50 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 100%;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.candidates {
+	height: 500px;
+	background-image: url("./images/gym1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.exam {
+	height: 500px;
+	background-image: url("./images/gym2.jpg"); 
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.candidate-text {
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Lobster Two';
+  color: burlywood;
+  margin-bottom: 12px;
+  top: 100px;
+}
+
+.test-category {
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.text-details {
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Lobster Two';
+  color: white;
+  margin-bottom: 12px;
+  top: 100px;
+}

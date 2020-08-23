@@ -1,0 +1,32 @@
+{
+  "name": "reminder_model",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "memberId": {
+      "type": "string",
+      "required": true
+    },
+    "packageId": {
+      "type": "string",
+      "required": true
+    },
+    "subscriptionEndDate": {
+      "type": "date"
+    },
+    "lastNotified": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

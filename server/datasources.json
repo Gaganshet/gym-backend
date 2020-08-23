@@ -1,0 +1,42 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "",
+    "database": "gymbuddy_vps2",
+    "password": "",
+    "name": "mongodb",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  },
+  "mail_notifier": {
+    "name": "mail_notifier",
+    "connector": "mail",
+    "transports": [
+			{
+				"type": "smtp",
+				"host": "smtp.gmail.com",
+				"port": 587,
+				"secure": false,
+				"auth": {
+					"user": "sforyouteam@gmail.com",
+					"pass": "foryou01"
+				},
+				"tls": {
+					"rejectUnauthorized": false
+				}
+			}
+			]
+  },
+  "message_notifier": {
+    "name": "message_notifier",
+    "accountSid": "AC757cd4738620a351de220a842553ab41",
+    "authToken": "6d74db0ab147fa7f3e60ac755ef4acf2",
+    "connector": "twilio"
+  }
+}

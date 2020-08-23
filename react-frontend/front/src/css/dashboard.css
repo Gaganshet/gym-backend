@@ -1,0 +1,142 @@
+.left-content {
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Times New Roman', Cursive;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.top-title{
+  position: relative;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: 'Times New Roman', Cursive;
+  color: white;
+  margin-bottom: 8px;
+  margin-top: 4px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000000;
+  padding: 12px;
+}
+
+.title{
+  position: relative;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+
+.right-content{
+  font-weight: 500;
+  margin-bottom: 19px;
+  position: relative;
+  color: #ffffff;
+  top: 14px;
+  line-height: 30px;
+}
+
+.text{
+  position: relative;
+  font-size: 15px;
+  font-family: 'Hind', sans-serif;
+  line-height: 22px;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Hind', sans-serif;
+  line-height: 30px;
+}
+
+.text{
+  position: relative;
+  margin-bottom: 46px;
+}
+
+.font_size_16{
+  font-size: 20px;
+}
+
+.centered{
+	text-align: center;
+}
+
+
+/* Login CSS settings */
+.login-form {
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.body_content {
+	
+/* 	background-repeat: no-repeat; */
+	background-repeat: stretch;
+	background-size: 100%;
+}
+
+.body_registercontent {
+	
+/* 	background-repeat: no-repeat; */
+	background-repeat: stretch;
+	background-size: 100%;
+}
+
+.second-header {
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-bottom: 15px;
+	position: relative;
+	color: black;
+	top: 1px;
+	line-height: 2px;
+}
+
+.gym-Detail {
+  position: relative;
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'Lobster Two';
+  color: black;
+  margin-bottom: 12px;
+}
+
+
+.getInTouch-style {
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 15px;
+	position: relative;
+	color: black;
+	top: 1px;
+	line-height: 2px;
+}
+
+/**text-align: center;*/
+.gymInTouch-Detail {
+	position: relative;
+	font-size: 18px;
+	line-height: 40px;
+	font-family: 'Lobster Two';
+	color: black;
+	margin-bottom: 1px;
+	
+}
+
+.ant-col-8 {
+  min-height: 500px;
+}

@@ -1,0 +1,60 @@
+{
+  "name": "member_enquiry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "contactAddress": {
+      "type": "string"
+    },
+    "packageId": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "attendedBy": {
+      "type": "string"
+    },
+    "isInterested": {
+      "type": "boolean",
+      "default": true
+    },
+    "hasJoined": {
+      "type": "string",
+      "default": false
+    },
+    "lastNotified": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "interestedPackage": {
+      "type": "hasOne",
+      "model": "package_details",
+      "foreignKey": "packageId"
+    },
+    "gymBranch": {
+      "type": "belongsTo",
+      "model": "gym_branch",
+      "foreignKey": "branch_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

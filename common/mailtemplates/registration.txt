@@ -1,0 +1,15 @@
+Dear [userName],
+
+Thank you for registering with us.
+
+Please find your details below,
+
+Member ID : [memberId]
+Phone Number : [phoneNumber]
+Package : [packageName]
+Expiring On : [endOfSubscription]
+
+Stay Fit!!!
+
+Best Regards,
+24x7 Fitness Studio

@@ -1,0 +1,39 @@
+{
+  "name": "enquiry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "interesetedPackageId": {
+      "type": "string"
+    },
+    "enquiryDate": {
+      "type": "date"
+    },
+    "referenceCategory": {
+      "type": "string"
+    },
+    "memberId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

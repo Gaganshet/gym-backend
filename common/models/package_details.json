@@ -1,0 +1,29 @@
+{
+  "name": "package_details",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "packageName": {
+      "type": "string"
+    },
+    "packagePeriodInMonths": {
+      "type": "number"
+    },
+    "packageCost": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

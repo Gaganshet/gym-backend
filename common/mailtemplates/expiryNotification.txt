@@ -1,0 +1,12 @@
+Dear [userName],
+
+This is a gentle reminder regarding your subscription expiry with 24x7 Fitness Studio.
+
+Your subscription is expiring on [endOfSubscription]
+
+Kindly renew your subscription.
+
+Stay Fit!!!
+
+Best Regards,
+24x7 Fitness Studio

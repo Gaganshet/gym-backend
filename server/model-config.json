@@ -1,0 +1,102 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "text_notifier": {
+    "dataSource": "message_notifier",
+    "public": true
+  },
+  "reminder_model": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "trainers": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "trainer_profile": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "package_details": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "members": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "member_profile": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "member_subscription_history": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "trainer_attendance": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "member_attendance": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "member_progress_report": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "enquiry": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "trainer_enquiry": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "member_enquiry": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "mail_model": {
+    "dataSource": "mail_notifier",
+    "public": true
+  },
+  "gym_branch": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

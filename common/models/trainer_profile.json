@@ -1,0 +1,54 @@
+{
+  "name": "trainer_profile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "trainerId": {
+      "type": "string"
+    },
+    "profilePicture": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "age": {
+      "type": "number"
+    },
+    "height": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "number"
+    },
+    "achievements": {
+      "type": "string"
+    },
+    "contactAddress": {
+      "type": "string"
+    },
+    "isFullTime": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trainers": {
+      "type": "belongsTo",
+      "model": "trainers",
+      "foreignKey": "trainerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

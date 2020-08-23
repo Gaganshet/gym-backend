@@ -1,0 +1,55 @@
+{
+  "name": "member_subscription_history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "memberId": {
+      "type": "string"
+    },
+    "packageId": {
+      "type": "string"
+    },
+    "startOfSubscription": {
+      "type": "date"
+    },
+    "endOfSubscription": {
+      "type": "date"
+    },
+    "trainerId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "amountPaid": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "members": {
+      "type": "belongsTo",
+      "model": "members",
+      "foreignKey": "memberId"
+    },
+    "packageDetails": {
+      "type": "belongsTo",
+      "model": "package_details",
+      "foreignKey": "packageId"
+    },
+    "trainers": {
+      "type": "belongsTo",
+      "model": "trainers",
+      "foreignKey": "trainerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

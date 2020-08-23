@@ -1,0 +1,32 @@
+{
+  "name": "gym_branch",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "branchNumber": {
+      "type": "number"
+    },
+    "branchName": {
+      "type": "string"
+    },
+    "branchAddress": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "gymMembers": {
+      "type": "hasMany",
+      "model": "members",
+      "foreignKey": "member_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

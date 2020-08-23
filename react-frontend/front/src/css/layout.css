@@ -1,0 +1,70 @@
+.logo_full {
+	width: 155px;
+	height: 28px;
+	background: rgba(255, 255, 255, .2);
+	margin: 15px 31px 15px 10px;
+	background-image: url("./images/24x7_full.jpg");
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	width: 67px;
+	height: 40px;
+	background: rgba(255, 255, 255, .2);
+	margin: 15px 15px 15px 5px;
+	background-image: url("./images/24x7.PNG");
+	float: left;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#app {
+	height: 99%;
+}
+
+.ant-layout {
+	height: 100%;
+}
+
+.ant-layout-content {
+	height: 100%
+}
+
+.ant-layout-header {
+	margin-left: 14px;
+	margin-right: 16px;
+}
+
+.ant-layout-footer {
+	padding: 8px !important;
+}
+
+.ant-layout-sider-children {
+	height: '100%';
+}
+
+/* width */
+.ant-layout-sider-children::-webkit-scrollbar {
+	width: 2px;
+}
+
+/* Track */
+.ant-layout-sider-children::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.ant-layout-sider-children::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+.ant-layout-sider-children::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.ant-col-8 {
+  height: 500px;
+}

@@ -1,0 +1,51 @@
+{
+  "name": "trainer_enquiry",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "contactAddress": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "yearsOfExperience": {
+      "type": "string"
+    },
+    "isFitnessCertified": {
+      "type": "boolean"
+    },
+    "fitnessCertificateNumber": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "hasJoined": {
+      "type": "string",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "gymBranch": {
+      "type": "belongsTo",
+      "model": "gym_branch",
+      "foreignKey": "branch_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,11 @@
+{
+   "presets": [["es2015", { "modules": false }], "env", "stage-0", "react"],
+   "env": {
+    "test": {
+      "presets": ["es2015", "react"],
+    }
+   },
+   "plugins": [
+      ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "true" }] // `style: true` for less
+    ]
+}
